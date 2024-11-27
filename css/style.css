@@ -1,0 +1,230 @@
+:root {
+    --color-principal: rgb(236, 238, 214);
+    --color-secundario: rgb(214, 216, 196);
+    --color-texto: black;
+    --color-fondo-footer: black;
+    --color-texto-footer: white;
+
+    --font-principal: "Medula One", system-ui;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+    font-size: 24px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    margin-left: 20px;
+}
+.logo img{
+    width: 100px;
+}
+.menu{
+    width: 25%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.menu a{
+    margin-right: 10px;
+}
+.boton-login{
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 1px 5px;
+    border: 1px solid #555;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color:  var(--color-principal);
+}
+.menu img{
+    height: 25px;
+}
+
+
+.bienvenida{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.imagen{
+    background-color: var(--color-principal);
+    width: 50%;
+}
+.imagen img{
+    width: 100%;
+}
+.texto{
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+.texto p{
+    font-size: 32px;
+}
+.texto span{
+    color: var(--color-secundario);
+    font-weight: bolder;
+    font-size: 38px;
+}
+.texto p{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.bicis1{
+    background-color: var(--color-principal);
+    padding: 20px;
+    text-align: center;
+}
+.bicis1 p{
+    font-size: 32px;
+}
+.bicis2{
+    padding: 20px;
+    text-align: center;
+}
+.bicis2 p{
+    font-size: 32px;
+}
+.bicis2 .cartas{
+    background-color: var(--color-principal);
+}
+.bicis p{
+    font-size: x-large;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.cartas{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    gap: 20px;
+    padding: 20px;
+}
+.carta img{
+    width: 150px;
+}
+.estrellas{
+    text-align: left;
+}
+.estrellas img{
+    width: 15px;
+}
+.nombre{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+.nombre:hover h3{
+    font-size: 30px;
+}
+.bicis2 .carta .precio{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.precio{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-secundario);
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-principal);
+}
+.logos img{
+    width: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.logos p{
+    font-size: 30px;
+
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    align-items: center;
+}
+.grid-footer div{
+    text-align: left;
+}
+.grid-footer div a{
+    text-decoration: none;
+    color: white;
+}
+.grid-footer div a:hover{
+    color: white;
+    font-size: 28px;
+}
+.grid-footer div h3{
+    color: var(--color-principal);
+}
+.grid-footer img{
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .cartas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .grid-footer div{
+        text-align: center;
+    }
+}
