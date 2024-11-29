@@ -61,7 +61,7 @@
     align-items: center;
 }
 .imagen{
-    background-color: var(--color-principal);
+    background: linear-gradient(to right, var(--color-principal), white);
     width: 50%;
 }
 .imagen img{
